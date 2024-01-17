@@ -201,7 +201,7 @@ div {
     display: flex;
 
     width :700px;
-    height: 500px;
+    height: 400px;
 
     flex-direction: column;
 }
@@ -210,7 +210,7 @@ div {
     
     display: flex;
     background-color: yellow;
-    flex-basis: 20%;
+    flex-basis: 30%;
 
     flex-direction: row;
 }
@@ -231,14 +231,105 @@ div {
     display: flex;
 
     flex-direction: row;
-    flex-basis: 80%
+    flex-basis: 70%;
 }
 
 .down-1 {
-    display: flex;
+    
+    
     background-color: aquamarine;
-    flex-basis:40%;
-    flex-direction: column;
+    
+    flex-basis:25%;
+    align-items: flex-start;
+    display: flex;
+    display: inline-block;
+}
 
+.down-1-1 {
+    
+    block-size: 33%;
+
+}
+.down-1-2 {
+    
+    block-size: 33%;
+}
+.down-1-3 {
+    
+    block-size: 33%;
+}
+
+.down-2 {
+    background-color: pink;
+
+    flex-basis: 15%;
+}
+
+.down-3 {
+    display: flex;
+     flex-basis: 40%;
+
+    flex-direction: column;
     
 }
+
+.down-3-1 {
+    
+    background-color: orange;
+    
+    flex-basis: 60%;
+    
+}
+
+.down-3-2 {
+    display: flex;
+    background-color: red;
+    
+    flex-basis: 40%;
+    justify-content: flex-start;
+}
+
+.down-3-2-1 {
+    display: flex;
+
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.aaa, .aaa1 {
+    background-color:green;
+    
+    flex-basis: 50%;
+}
+
+.aaa1 {
+    background-color:green;
+    flex-basis: 50%;
+}
+
+.down-4{
+    display: flex;
+    background-color: pink;
+    flex-direction: column;
+    
+    flex-basis: 20%;
+    
+}
+
+.down-4-1 {
+    height: 20%;
+}
+.down-4-2 {
+    height: 80%;
+}
+
+.down-4-3 {
+    height: 20%;
+}
+
+
+
+
+
+
+
