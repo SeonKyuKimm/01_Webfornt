@@ -112,5 +112,5 @@ width가 지정되지 않으면 항상 100%
     background-color: deeppink;
 
     /* visibility: hidden; */
-    display: none;
+    /* display: none; */
 }
