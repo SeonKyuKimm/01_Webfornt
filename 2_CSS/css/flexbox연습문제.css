@@ -277,7 +277,7 @@ div {
     
     background-color: orange;
     
-    flex-basis: 60%;
+    flex-basis: 55%;
     
 }
 
@@ -285,11 +285,16 @@ div {
     display: flex;
     background-color: red;
     
-    flex-basis: 40%;
-    justify-content: flex-start;
+    flex-basis: 45%;
+    
 }
 
 .down-3-2-1 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%
+}
+/* .down-3-2-1 {
     display: flex;
 
     flex-direction: column;
@@ -305,7 +310,7 @@ div {
 .aaa1 {
     background-color:green;
     flex-basis: 50%;
-}
+} */
 
 .down-4{
     display: flex;
