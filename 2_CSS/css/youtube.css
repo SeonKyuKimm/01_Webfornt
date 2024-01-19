@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -49,9 +49,14 @@ header {
 main {
     
     display: flex;
-    margin: auto;
+    
 
     justify-content: flex-start;
+}
+
+.video-link {
+    display: flex;
+    border-radius: 90deg;
 }
 
 #content-1{
@@ -59,6 +64,10 @@ main {
     padding-top: 24px;;
     padding-left: 24px;
     
+}
+
+.word{
+    display: block;
 }
 
 #van {
@@ -70,4 +79,17 @@ main {
 }
 #van > .van-1{
 
+}
+
+.thumb{
+    display: inline-block
+}
+
+.view .view-1 {
+    background-color: lightgray;    
+    box-sizing: auto; 
+}
+
+.second{
+    color: blue;
 }
