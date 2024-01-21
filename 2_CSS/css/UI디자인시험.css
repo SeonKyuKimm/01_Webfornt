@@ -1,0 +1,185 @@
+* {
+        box-sizing: border-box;
+    
+        /* border: 1px solid black; */
+}
+
+body{
+    display: flex;
+    margin: auto; /**/
+    background-color: rgba(194, 204, 231, 0.692);
+}
+
+main {
+   
+    margin: 10;
+    
+}
+
+header {
+    height: 200px;
+    display: flex;
+
+    padding-left: 400px;
+}
+
+header > section:nth-of-type(1) {
+    display: flex;
+
+    
+    align-items: center;
+}
+header > section:nth-of-type(2) {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#shaka-logo {
+    width: 250px;
+    height:250px;
+}
+
+
+header > section:nth-of-type(1) {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header > section:nth-of-type(1),
+header > section:nth-of-type(3) {
+    flex-basis: 20%;
+}
+
+header > section:nth-of-type(2) {
+    flex-basis: 80%;
+}
+
+.summ{
+    color: black;
+    font: 48px;
+}
+
+
+
+
+/* nav */
+
+#nav-ul-li {
+
+}
+
+nav > ul:nth-of-type(1), 
+nav > ul:nth-of-type(2) {
+    flex-basis: 30%;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+nav ul {
+    justify-content: space-around;
+    
+}
+
+header > section:nth-of-type(3) {
+    flex-basis: 70%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:black ;
+    height: 100%;
+    display: flex;
+
+    
+    line-height: 50px;
+
+    
+    border-radius: 50px;
+}
+
+nav a:hover {
+    
+    background-color: black;
+    color: white;
+}
+
+
+/*        큰 섹션             */
+
+#big-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.b-section0{
+    display:flex;
+    justify-content: center;
+}
+
+.intro {
+    font-size: 30px;
+}
+
+
+/* height는 나중에 빼도 될듯? */
+.b-section1{
+    height:400px;
+    
+}
+
+.b-section2{
+    height: 400px;
+}
+
+.b-section3{
+    height: 400px;
+    display:flex;
+    flex-direction: row;
+}
+
+.b-section3-1{
+    padding: 30px;
+    flex-basis: 15%;
+}
+
+/* footer */
+
+footer {
+    height: 150px;
+    background-color: #115deb42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+footer > section {
+    font-weight: bold;
+}
+
+footer > section > * {
+    font-size: 20px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer span {
+    padding: 0;
+}
+
