@@ -1,3 +1,5 @@
+
+
 function printJSObject() {
     const userName = document.getElementById("userName")
     const userAge = document.getElementById("userAge")

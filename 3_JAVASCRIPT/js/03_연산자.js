@@ -20,7 +20,7 @@ function plusFn() {
 
     //console.log("두 수의 합 : ", value1 +  value2);
 
-    // -> input 요소에 작성된 값은 무조건 문자열(string) 형태라서
+    // -> input 요소에 작성된 값은 무조건 문자열임(string) 형태라서
     // 더했을 때 이어쓰기가 되는 문제가 발생한다!
 
     // [해결방법]
