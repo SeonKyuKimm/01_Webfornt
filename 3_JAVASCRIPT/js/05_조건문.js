@@ -7,9 +7,9 @@ function check1() {
     if( value > 0 ) { //value 가 0보다 커서 true 인 경우
         alert("양수입니다.")
     }
-
-    if( value <= 0 ) {//value 가 0과 같거나 작아서 false인 경우
-        // -> value 가 양수가 아닌 경우
+    //value 가 0과 같거나 작아서 false인 경우
+    // -> value 가 양수가 아닌 경우
+    if( value <= 0 ) {
         alert("양수가 아닙니다.")
     }
 }
@@ -40,7 +40,7 @@ function check3() {
     if(randomNumber == 0 ){
         //message = message + "0 입니다.";
         message += "0 입니다.";// 복합 대입 연산자 활용
-    } else if(randomNumber > 0) {
+    } else if(randomNumber > 0) { // 양수인경우
         message += "양수입니다.";
     } else { //0도 아니고, 양수도 아닌경우 ==음수인경우
         message += "음수입니다.";
@@ -128,10 +128,6 @@ function calc(op) {
         //맞는 case가 없을 경우에 적용할 기본값
         default : result = "잘못된 연산자"; break;
     }
-
-
-
-
 
     calcResult.innerText = result;
 }

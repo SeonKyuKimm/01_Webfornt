@@ -30,6 +30,8 @@ function compareFn2() {
     result2.innerText = (v3 > v4);
 }
 
+
+//배수 확인
 const input3_1 = document.getElementById("input3_1");
 const input3_2 = document.getElementById("input3_2");
 
@@ -64,6 +66,8 @@ const input4 = document.getElementById("input4");
 
 const result4 = document.getElementById("result4");
 
+
+// 차감
 function minus4() {
     const value = Number(input4.value);
     //count4 = count4 - value;
@@ -136,4 +140,5 @@ function login() {
 
     alert(message);
 }
+
 

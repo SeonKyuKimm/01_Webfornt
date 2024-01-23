@@ -12,45 +12,64 @@
     <main>
         <header id="header">
             <section id="header-1">
-                <form>
-                    <fieldset>
-                        <button id="top-menu" class="fa-solid fa-bars"></button>
-                        <i class="fa-solid fa-bars"></i>
-                    </fieldset>
-                </form>
-            
-                    <a href="#">
-                        <img src="/images/realUtube.png" id="youtubelogo">
-                    </a>
+                <button id="top-menu" class="fa-solid fa-bars">
+                </button>
+                   
+                <a href="#">
+                    <img src="../images/realUtube.png" id="youtubelogo">
+                </a>
             </section>
 
-            <section id="serch-bar">
-                <form>
-                    <fieldset>
-                        <input type="text" class="txt-place" placeholder="검색">
-                    </fieldset>
-                </form>
+            <section >
+                <section id="search-bar">
+                    <form action="#" name="search"> <!--폼태그 안에는 경로떄문에 필수로 액션태그-->
+                        
+                        <fieldset>
+                            <input type="text" id="txt-place" name="txt-place" placeholder="&nbsp;검색"
+                            autocomplete="off">
+                             
+                            <span class="small-bar">|</span>
+
+                            <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                        </fieldset>
+                    </form>
+
+                    
+
+                </section>
             </section>
-            <section id="v+b+n">
-                <button></button>
-                <button></button>
-                <button></button>
+
+            <section id="vbn" class="vbn">
+                <button id="viedo-btn" class="fa-solid fa-video"></button>
+
+                <button id="bell-btn" class="fa-regular fa-bell"></button>
+                <div class="purple-name">
+                    <p>선규</p>
+                    <img src="../images/purple-circle.png" class="p-circle">    
+                </div>    
             </section>
         </header>
 
         <section>
 
-        </section>    
+
+
+        </section id="vid">
+            <section>
+                <section class="video-link">
+                    <iframe id="iframe" width="640px" height="250px" src="https://www.youtube.com/embed/t1H1Hn5cMd0" title="[Playlist] 뉴욕 드라이브 운전 하면서 듣는 음악" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+            </section>   
+            
+            <section></section>   
+            
+            <section></section>   
+            
+            <section></section>   
+            
+            <section></section>   
         
-        
-        
-        
-        
-        
-        
-        
-        
-        <footer>
+            <footer>
 
         </footer>
 
