@@ -119,10 +119,157 @@ function executeFn2() {
 function executeFn3() {
     //입력받은 숫자의 곱 ?
 
-        const input3 =Number(document.getElementById("input3").value);
+    // 입력될 값(단)
+    const input3 = Number(document.getElementById("input3").value);
+    
+    //결과를 출력할 요소 ul태그
+    const ul = document.getElementById("result3");
 
-        const ul= document.getElementById("result3");
+            
+    ul.innerHTML = ""; // 이전 내용 (하단에 출력됐던 값)을 삭제해주는 역할
+                       // innerTetxt = 와 innerHTML의 용도 파악
 
-        ul.innerHTML = '';
+    //입력받은 단이 2-9가 아닐 경우
+    //"2-9" 사이만 입렵해 주세요
+
+    if (input3 < 2 || input3 > 9 ) {
+        alert("2~9 사이만 입력해 주세요");
+        return; // 함수를 종료하고 호출한 곳으로 돌아가는 역할
+                // 함수 종료 정도로 인식
+    }
+
+    //단 input3, 곱해지는 수는 num
+    for(let num = 1; num <= 9; num++) {
+        ul.innerHTML += `<li> ${input3} x ${num} = ${input3 * num}</li>`;
+    }
         
 }
+
+//*************************************************************************
+
+/* 다음 모양 출력하기
+12345
+12345
+12345
+12345
+*/
+
+function check8() {
+    
+    //4바퀴 반복하는 for 문
+    for (let y = 1; y <=4; y++) {
+        
+        // "12345" 출력하는 구문
+
+        let str ="";
+        for (let x = 1; x <= 5; x++) {
+            str += x;
+            // "1부터 시작해서 x가 5보다 커질때까지 반복"
+        }
+
+        console.log(str);
+
+        //12345
+        //12345
+    }
+
+}
+function check9() {
+    
+    for (let y = 1; y <= 5; y++) {
+
+
+        let str = "";
+        for(let x =1; x <= y; x++) {
+            str += x;
+            
+        }
+        console.log(str);
+    }
+}
+
+function check16() {
+    
+    //먼저 변수를 선언만 해두기
+    let val; // undefined
+
+    //취소를 누루기 전 까지 반복
+    // == 취소를 누르면 반복하지 않겠다.
+    while( val !== null ) {
+       
+        // 동일 비교 연산자
+        // A != B 값이 다르다, 
+        // !== -> 값과 자료형이 모두 다른경우 true 
+        // === -> 값과 자료형이 모두 같은경우 true
+        val = prompt("입력 후 확인"); //변수에 prompt 값 대입
+        // 확인 -클릭-> 입력한 값
+        // 취소 -> null
+
+        console.log(val);
+    }
+}
+
+function check17() {
+
+        // 메뉴 가격
+        const gimbap = 3000;
+        const ramen = 3500;
+        const donkatsu =5000;
+
+        // 주문 갯수 카운트
+
+        let gCount = 0;//김밥
+        let rCount = 0;//라면
+        let dCount = 0;// 돈가스 
+
+        //prompt로 입력한 값을 저장할 변수 선언
+
+        let input; //undefined
+
+        // 확인 -> 입력한 값
+        // 취소 -> null
+
+
+        while( input !== null ) { //취소 누르기 전까지 반복
+
+            input = prompt ("메뉴 번호를 입력하세요!")
+
+            switch(input) {
+                case "1" : gCount++; break;
+                case "2" : rCount++; break;
+                case "3" : dCount++; break;
+                case null : alert("주문 완료!"); break;
+                default : alert("메뉴에 작성된 번호만 입력해주세요"); break;
+            }
+
+        }
+
+        alert(`김밥 :${gCount}, 라면 ${rCount}, 돈가스 ${dCount}`);
+        let sum = (gCount * gimbap) + (rCount * ramen) + (dCount * donkatsu);
+        
+        alert(`총 가격 : ${sum}원`);
+}
+
+
+function check18() {
+
+    //1부터 10까지 출력
+
+    let num = 1;
+    while( num < 11 ) {
+        console.log(num);
+        
+        num++;
+    }
+
+    console.log ("*******************")
+    
+    // 10부터 1 까지 1씩 감소 (while)
+
+    let num2 = 10;
+    while (num2 > 0) {
+        console.log(num2);
+        num2--;
+    }
+}
+

@@ -54,7 +54,7 @@ function checkFn3() {
 
 
     
-    result3.innerText = `${v1}은/는 ${v2}의 배수 : ${v1 % v2 == 0}`; 
+    result3.innerText = `${v1}은/는 ${v2}의 배수 : ${v1 % v2 == 0}`;
 }
 
 
