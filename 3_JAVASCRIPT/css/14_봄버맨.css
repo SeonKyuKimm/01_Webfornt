@@ -1,0 +1,15 @@
+#box {
+    width: 500px;
+    height: 500px;
+
+    border : 2px solid black;
+
+    overflow : hidden;
+    display: flex;
+
+    flex-direction: column;
+}
+
+img { 
+    width: 50px;
+}

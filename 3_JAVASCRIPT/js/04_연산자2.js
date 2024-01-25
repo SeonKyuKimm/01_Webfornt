@@ -10,7 +10,7 @@ function compareFn1() {
     const v2 = cv2.value;
 
     //console.log( v1 == v2 );
-    result1.innerText =  (v1 ==v2 );
+    result1.innerText =  (v1 == v2 );
 }
 
 // A > B 초과 비교
