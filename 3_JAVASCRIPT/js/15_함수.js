@@ -94,7 +94,7 @@ document.querySelector("#btn2a"). addEventListener("click" , function() {
 })
 
 // 매개 변수로 요소 전달
-function btn2bfn(el) {
+function btn2bFn(el) {
     // 매개변수 el (element) : 이벤트가 발생한 요소
     el.style.backgroundColor = "yellow";
 }
@@ -156,3 +156,90 @@ document.querySelector("#btn3a").addEventListener("click", function() {
 
     console.log("합계 : " , sumFn(numbers));
 })
+
+
+// 24.01.26 //  vvvvvvv
+
+//화살표 함수
+
+//클래스가 arrow인 요소를 모두 얻어옴(배열형태로 넘어올것임)
+const arrowList = document.querySelectorAll(".arrow");
+
+// << HTML 에 보면 버튼이 4개라서 4개 만든거임
+
+//화살표 함수 기본형태
+arrowList[0].addEventListener("click", () => {
+
+    alert("화살표 함수 기본 형태 연습");
+});
+
+// 매개변수가 1개인 경우 : () 생략 가능
+
+function print3(otherFn) {
+
+
+    const numbers=[1, 2, 3, 4];
+    console.log( otherFn(numbers) );
+}
+
+arrowList[1].addEventListener("click", e => {
+
+    // e : 이벤트 객체 (모든 이벤트 관련 정보가 담겨있는 객체)
+    // e.target : 애가 발생하는건 이벤트가 발생한 요소 자체
+
+
+    e.target.style.backgroundColor = "pink";
+
+    print3( arr => {
+        let result = 0;
+        
+        for( let i=0; i<arr.length; i++) {
+            result += arr[i];
+        }
+
+        return result;
+
+    } );
+});
+
+// return. 한 줄만 작성된 경우
+function twoNumberPlus( otherFn ) {
+    
+    const input1 = Number(prompt("첫 번째 값"));
+    const input2 = Number(prompt("두 번째 값"));
+
+    alert( otherFn(input1, input2) );
+}
+
+arrowList[2].addEventListener("click" , () => {
+
+    twoNumberPlus( (a, b) => a + b  );
+    //return 한 줄만 있는 경우
+    // {}, return 생략 가능
+});
+
+// return 한 줄인데 object를 반환하는 경우
+function printObject(otherFn) {
+    const obj = otherFn("홍길동", 20);
+
+    console.log(`obj.name : ${obj.name}`);
+    console.log(`obj.name : ${obj.age}`);
+}
+
+arrowList[3].addEventListener("click" , () => {
+
+    printObject( (name, age) => {
+        return {"name" : name, "age" : age};
+        //JS 객체 {k:v, k:v }
+    } );
+
+});
+
+
+
+// 즉시 실행 함수
+
+( () => {
+    console.log("즉시 실행 함수입니다");
+    console.log("함수 모양이 좀 어렵죠?");
+})()
