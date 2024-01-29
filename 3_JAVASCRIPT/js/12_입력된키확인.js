@@ -25,7 +25,18 @@ document.addEventListener("keydown" , function(e) {
 
     // idx 번호와 일치하는 keys 배열의 요소의 배경색을 변경
     keys[idx].style.backgroundColor = "deepPink";
+    //이걸 쓴 이유는 
+    /* 
+    switch(e.key.toLowerCase()) {
 
+        case 'q' : keys[0].style.backgroundColor = "deepPink"; break;
+        case 'q' : keys[1].style.backgroundColor = "deepPink"; break;
+        case 'q' : keys[2].style.backgroundColor = "deepPink"; break;
+        case 'q' : keys[3].style.backgroundColor = "deepPink"; break;
+        default : return
+        }
+        을 피하기 위해서임ㅇㅇ
+    */
 }) ;
 
 // 키를 떼면 배경색을 흰색으로 되될리기

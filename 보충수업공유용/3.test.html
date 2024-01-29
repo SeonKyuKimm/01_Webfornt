@@ -22,6 +22,32 @@
     <section id="result"></section>
 
     <script>
+
+        // 함수 진행하는 버튼 , input ("태그","내용","색상") id값 가져오기
+        
+        //태그
+        const tagName = document.getElementById("tagName");
+        const tagInnerText = document.getElementById("tagInnerText");
+        const colorName = document.getElementById("colorName");        
+        
+        const btn = document.querySelector("#btn");
+        
+        btn.addEventListener( "click", function() {
+            
+
+            
+            colorName.style.color = colorName;
+
+
+            result = (tagName + tagInnerText + colorName);
+            document.getElementById("result").innerText = result;
+            
+
+        });
+
+        
+
+
     </script>
 </body>
 </html>

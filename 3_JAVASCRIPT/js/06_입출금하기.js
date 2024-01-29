@@ -33,9 +33,11 @@ output.innerText = balance; // 초기 금액 설정
 
 //입금
 function deposit() {
+
     // 1. 입금 버튼 클릭
     // 2. input 태그에 입력된 금액 구하기
     // 3. 구한 금액을 잔액(balance)에 추가하기
+    
     if (amount.value.length == 0) {
         alert("금액을 입력해주세요")
 

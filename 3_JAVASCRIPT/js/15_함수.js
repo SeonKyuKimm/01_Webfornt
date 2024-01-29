@@ -6,9 +6,8 @@ const btn1 = document.querySelector("#btn1")
 // 2 개의 값을 전달 받아 출력하는 함수
 function print1(num, str) { // 함수 선언
     // 함수 정의
-    console.log(`${num} 은/는 ${str} 입니다`);
+    alert(`${num} 은/는 ${str} 입니다`);
 }
-
 
 /*#btn 클릭 시 #input의 값을 읽어와 print() 함수 호출 */
 btn1.addEventListener("click", function() {
@@ -29,10 +28,11 @@ btn1.addEventListener("click", function() {
 
     /* 함수 호출 (값 전달)*/
     /* 중요 !! 전달되는 값의 순서가 중요합니다 ! */
-    print(value, result);
-    print(result, value);
+    print1(value, result);
+    print1(result, value);
 
 });
+
 
 /* 매개변수로 배열 전달하기 */
 
@@ -69,11 +69,6 @@ document.querySelector("#btn2a"). addEventListener("click" , function() {
     // -> 함수 수행 후 돌아와서도
     //  참조하고 있던 배열의 2번 인덱스 값이 변화되어 있음
 
-
-
-
-
-
     /*
     참조란 ?
 
@@ -94,7 +89,7 @@ document.querySelector("#btn2a"). addEventListener("click" , function() {
 })
 
 // 매개 변수로 요소 전달
-function btn2bFn(el) {
+function btn2bFn( el ) {
     // 매개변수 el (element) : 이벤트가 발생한 요소
     el.style.backgroundColor = "yellow";
 }

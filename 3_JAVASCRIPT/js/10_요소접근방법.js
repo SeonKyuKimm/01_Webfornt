@@ -1,5 +1,5 @@
 //클래스 접근 테스트
-
+const divs = document.getElementsByClassName("cls-test");
 function classTest() {
 
     // 유사 배열이란?
@@ -9,7 +9,7 @@ function classTest() {
     
     //.cls-test 요소 모두 얻어오기
 
-    const divs = document.getElementsByClassName("cls-test");
+    
 
     console.log(divs);
 
