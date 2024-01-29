@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript 예제 - 사용자 환영 메시지</title>
+</head>
+<body>
+
+<!-- HTML 폼 -->
+<form id="welcomeForm">
+  <label for="name">이름을 입력하세요:</label>
+  <input type="text" id="name" name="name" required>
+  <button type="button" onclick="generateWelcomeMessage()">환영 메시지 생성</button>
+</form>
+
+<!-- 결과를 표시할 곳 -->
+<div id="welcomeMessage"></div>
+
+<script>
+
+   
+    // 환영 메세지를 클릭 하면 실행되는 함수 선언
+    function generateWelcomeMessage() {
+      //함수 정의 **
+
+      // 1. input에 작성된 내용 얻어오기 (value.)
+      let name = document.getElementById("name").value;
+    
+      // 2. 환영메세지
+      let welcomeMessage = "안녕하세요, " + name + "님! 환영합니다!" ;
+
+
+     // 3. 만든 메세지를 id가 welcomeMessage 인 div 에 표시
+     document.getElementById("welcomeMessage").innerText = welcomeMessage;
+
+      
+    
+      
+    }
+</script>
+
+</body>
+</html>

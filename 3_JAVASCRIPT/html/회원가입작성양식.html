@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입작성양식</title>
+    
+    <style>
+        fieldset {
+            box-sizing: border-box;
+            width: 500px;
+        }
+        
+        .confirm { color : green; }
+
+        .error { color : red;}
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>회원가입 작성양식</legend>
+            
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input type="text" id="inputId">
+                        <button>중복확인</button>
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="text" id="inputPw">
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <th>비밀번호확인</th>
+                    <td>
+                        <input type="text" id="inputPwConfirm">
+                    </td>    
+                </tr>
+                
+
+                <tr>
+                    <th>이름</th>
+                    <td>
+                        <input type="text" id="inputName">
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        남 <input type="radio">
+                        여 <input type="radio">
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <th>전화번호</th>
+                    <td>
+                        <input type="number" id="inputTel">
+                    </td>
+                </tr>
+                
+
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <input type="email">
+                    </td>
+                </tr>
+            </table>
+            
+            <br>
+
+            <button id="reset">초기화</button>
+            <button id="insert">회원가입</button>
+        </fieldset>
+        
+
+    
+    </form>
+
+    <script src="../js/회원가입작성양식.js"></script>
+</body>
+</html>
