@@ -2,7 +2,7 @@
 
 document.querySelector("#btn1").addEventListener("click", () => {
 
-    const test = document.querySelector("#test")
+    const test = document.querySelector("#test");
 
     // #test 의 모든 자식 Node를 얻어오기
     // 요소.childNodes -> 복수계이니까 배열로 넘어올것임
@@ -73,16 +73,17 @@ document.querySelector("#btn1").addEventListener("click", () => {
 
 
 
-/*hildren : 자식 요소만 모두 선택
-      parentElement : 부모 요소 선택
-
-
-      firstElementChild : 첫 번째 자식 요소 선택
-      lastElementChild  : 마지막 자식 요소 선택
-
-
-      previousElementSibling : 이전 형제 요소 선택
-      nextElementSibling     : 다음 형제 요소 선택
+/*    
+    children : 자식 요소만 모두 선택
+    parentElement : 부모 요소 선택
+    
+    
+    firstElementChild : 첫 번째 자식 요소 선택
+    lastElementChild  : 마지막 자식 요소 선택
+    
+    
+    previousElementSibling : 이전 형제 요소 선택
+    nextElementSibling     : 다음 형제 요소 선택
 */
 const btn2 = document.querySelector("#btn2")
 

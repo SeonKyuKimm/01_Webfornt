@@ -92,14 +92,12 @@ add.addEventListener("click", () => {
 
 
 
-const calcbtn = document.querySelector("#calc");
-
-calcbtn.addEventListener("click", ()=> {
+const calcbtn = document.querySelector("#calc").addEventListener("click", ()=> {
 
     // 1) 모든 .input-number 얻어도기
     const numbers = document.querySelectorAll(".input-number");
     
-    //console.log("numbers");
+    console.log("numbers");
 
     // 2) for문으로 모든 요소 접근하여
     // 작성된 값 value 을 얻어와

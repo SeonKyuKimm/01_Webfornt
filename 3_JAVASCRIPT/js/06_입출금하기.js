@@ -2,9 +2,10 @@
 
 function test() {
 
-    const password =prompt("비밀번호를 입력하세요")
+    const password = prompt("비밀번호를 입력하세요")
+    // prompt : 확인 취소를 가지고 있는 경고창
 
-    // 확인버튼 -> 입력한 문자열이
+    // 확인버튼 -> 입력한 문자열
     // 취소버튼 -> null
 
     if (password == null) { //취소
@@ -39,11 +40,11 @@ function deposit() {
     // 3. 구한 금액을 잔액(balance)에 추가하기
     
     if (amount.value.length == 0) {
-        alert("금액을 입력해주세요")
+        alert("금액을 입력해주세요");
 
     } else {
         balance += Number(amount.value);
-        // balance= balance + Number(amount.value);
+        // balance = balance + Number(amount.value);
         output.innerText = balance;
 
         amount.value = ''; // input에 작성된 값 제거
@@ -85,6 +86,5 @@ function withdrawal() {
                 }
             }
         }
-
     }
 }

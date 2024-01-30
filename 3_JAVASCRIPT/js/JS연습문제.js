@@ -1,16 +1,18 @@
-const key = document.querySelectorAll("key");
+const number = document.querySelectorAll(".number");
+const result = document.getElementById("result");
+const reset = document.getElementById("reset");
 
-result 
-document.addEventListener("onclick", function(e){
+let count = '';
 
-    let idx;
-    switch(e.key.onclick()) {
-        case ''
+console.log(number);
 
-    }
-
+document.addEventListener("onclick", () => {
     
 
-    //innerHTML에 들어갈 값
-    result.innerHTML.value = 
-})
+    for( let i = 0; i < number.length; i++ ) {
+        number[i] = i*10;
+    }
+    const value = number.value;
+
+    result.innerHtml = value;    
+});

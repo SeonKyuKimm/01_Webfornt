@@ -8,7 +8,7 @@ function check1() {
     
     let result =""; // 빈 문자열
     // "12345"
-    for(let num = 1; num <= 5;num++ ) {
+    for(let num = 1; num <= 5; num++ ) {
         // console.log(num);
 
         result += num;
@@ -63,6 +63,7 @@ function check6() {
     console.log("sum:", sum);
 }
 // 입력 받은 범위 내 모든 정수의 합 구하기
+
 //const inputNumber1_1 = document.getElementById("inputNumber1-1");
 //const inputNumber1_2 = document.getElementById("inputNumber1-2");
 //const result1 = document.getElementById("result1");
@@ -114,7 +115,7 @@ function executeFn2() {
     // -> HTML 태그를 해석해서 화면에 태그의 본 기능대로 출력
 
 
-/* 숙제 */
+/* 숙제 : 입력받은 단 (2~9) 출력하기 */
 
 function executeFn3() {
     //입력받은 숫자의 곱 ?

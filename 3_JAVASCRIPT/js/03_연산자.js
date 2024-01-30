@@ -20,8 +20,9 @@ function plusFn() {
 
     //console.log("두 수의 합 : ", value1 +  value2);
 
-    // -> input 요소에 작성된 값은 무조건 문자열임(string) 형태라서
+    // -> input 요소에 작성된 값은 무조건 문자열(string) 형태라서
     // 더했을 때 이어쓰기가 되는 문제가 발생한다!
+    // ex) 45+45 = 4545
 
     // [해결방법]
     // 문자열(string)을 숫자(number)로 변경하는 코드를 수행해야함
@@ -30,7 +31,7 @@ function plusFn() {
     // 진짜 숫자(123)로 바꾸는 방법
     // -> Number("123") --> 123 (진짜숫자0
 
-    console.log("두 수의 합 : ", Number(value1) + Number(value2))
+    console.log("두 수의 합 : ", Number(value1) + Number(value2));
 
     /**
      * 두 수의 합을
@@ -78,7 +79,7 @@ function modFn() {
     result.innerText = value1 % value2;
 }
 
-//************************** */
+/***************************/
 
 const num1 = document.getElementById("num1");
 const num2 = document.getElementById("num2");

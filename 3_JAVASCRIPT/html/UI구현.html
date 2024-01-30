@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI구현</title>
+
+
+    <link rel="stylesheet" href="/UI구현..css">
+</head>
+<body>
+    
+    <section id="container-1">
+        
+        <div id="list1">
+            <b>너비 : </b> 
+            <input type="number" class="w-h">
+            <b>높이 : </b>
+            <input type="number" class="w-h">
+        </div>
+        
+        <div id="list2">
+            <b>글자크기 : </b>
+            <input type="number" class="fontpixel">
+
+            <b>굵기 : </b>
+            보통<input type="radio" name="fontborder"> 
+            굵게<input type="radio" name="fontborder">
+        </div>
+
+        <div id="list3">
+            <b>글자색 : </b> 
+            <input type="text" class="font-color">
+
+            <b>배경색 : </b> 
+            <input type="text" class="bgColor">
+        </div>
+
+        <div id="list4">
+            <b>가로정렬 : </b>
+            왼쪽<input type="radio" name="row"> 
+            가운데<input type="radio" name="row"> 
+            오른쪽<input type="radio" name="row">
+        </div>
+        
+        <div id="list5">
+            <b>세로정렬 : </b>
+            위<input type="radio" name="col"> 
+            가운데<input type="radio" name="col"> 
+            아래<input type="radio" name="col">
+        </div>
+        
+        <div>
+            <b>출력 문자열 : </b> <input type="text" class="print1">
+        </div>    
+        
+        <button onclick="addAllFn(this)">적용하기</button>
+
+    <div id="box1"></div>
+
+</section>
+
+    <script src="/UI구현.js"></script>
+</body>
+</html>

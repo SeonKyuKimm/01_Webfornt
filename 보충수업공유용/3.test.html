@@ -30,21 +30,26 @@
         const tagInnerText = document.getElementById("tagInnerText");
         const colorName = document.getElementById("colorName");        
         
-        const btn = document.querySelector("#btn");
+        /* document.getElementById("btn1").addEventListener("click", ( => {
+            const btn = document.getElementById("btn"); 
+        })) */
+        const btn = document.getElementById("btn");
+
         
-        btn.addEventListener( "click", function() {
+        btn.addEventListener("click", function() {
             
+            const result = document.getElementById("result");
+            result.innerHTML = '';
 
-            
-            colorName.style.color = colorName;
+            const box = document.createElement(tagName.value);
 
+            box.innerText = tagInnerText.value;
+            box.style.color = colorName.value;
 
-            result = (tagName + tagInnerText + colorName);
-            document.getElementById("result").innerText = result;
-            
+            result.append(box);
 
         });
-
+        // result 의 위치?
         
 
 

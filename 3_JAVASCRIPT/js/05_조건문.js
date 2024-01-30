@@ -24,9 +24,15 @@ function check2() {
 
    if(randomNumber %2 == 1) { //홀수
     alert (`${randomNumber} 는 홀수 입니다`);
-    } else {    //홀수가 아닌 경우 ==짝수
+    } 
+    else {    //홀수가 아닌 경우 ==짝수
         alert (`${randomNumber} 는 짝수 입니다`);
     } 
+
+    /* if를 두 번 사용해서 하는 방법도 되긴 함
+     if(randomNumber %2 ==0) {
+        alert(`${randomNumber} 는 짝수입니다.`);
+    } */
 }
 
 // -3 ~ 3 사이 난수를 발생시켜, 양수, 음수, 0 판별
@@ -57,13 +63,13 @@ const inputAge = document.getElementById("inputAge");// input 자체
 function check4() {
     //입력한 나이 값 얻어오기
      const age = Number(inputAge.value);
+
      console.log ("age:" ,age);
-     console.log( inputAge.value.length );
+     console.log( inputAge.value.length );// 니가 input에 몇글자 입력했는지 길이재주는거
 
      //"문자열".length : 문자열의 길이
 
-     //입력된 나이의 길이가 0인 경우 == 입력 안한 경우
-
+     //입력된(inputAge) 나이의 길이(length)값 (value)이 0인 경우 == 입력 안한 경우
      if(inputAge.value.length == 0) {
         alert("미입력");
 
@@ -78,12 +84,11 @@ function check4() {
 
             } else if (age <=19) { // 청소년
                 alert("청소년");
+           
             } else { // 성인
                 alert("성인");
             }
-
     }
-    
 }
 
 

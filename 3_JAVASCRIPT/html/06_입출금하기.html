@@ -42,11 +42,11 @@
 
 
 
-    * 비밀번호가 일치할 경우
+    * 비밀번호가 일치할 경우 <!--JS 76번 줄-->
       1) 출금할 금액이 잔액(balance) 보다 큰 경우
         -> alert("출금 금액이 잔액보다 클 수 없습니다") 출력
      
-      2) 출금할 금액이 잔액(balance) 보다 작거나 같은 경우
+      2) 출금할 금액이 잔액(balance) 보다 작거나 같은 경우 <!--JS 79번 줄-->
         -> 잔액(balance)에서 출금 금액만큼 감소 시킨 후
           alert("OOO원이 출금 되었습니다. 남은 잔액 : OOO원") 출력
 
@@ -65,15 +65,15 @@
 
 
   <div class="account">
+    
     <div class="row">
       <h1>잔액 : <span id="output"></span> 원</h1>
     </div>
+
     <div class="row input-row">
       <label for="amount">금액 : </label>
       <input type="text" id="amount">
       <span>원</span>
-
-
     </div>
     
     <div class="row btn-row">

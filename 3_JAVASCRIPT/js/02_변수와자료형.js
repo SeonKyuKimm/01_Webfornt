@@ -63,7 +63,7 @@ let number3 = 25;
 
 // let number3 = 500;
 
-number= 500; // 기존 변수 number3에 새로운 값만 대입
+number3= 500; // 기존 변수 number3에 새로운 값만 대입
 
 console.log("number3 : ", number3);
 
@@ -156,11 +156,12 @@ const numbers = [10, 20, 30];
 
 console.log("numbers : ", numbers, typeof numbers);
 
-console.log("numbers 배열 값 중 0번째", numbers[0], typeof numbers[0]);
-console.log("numbers 배열 값 중 0번째", numbers[1], typeof numbers[1]);
-console.log("numbers 배열 값 중 0번째", numbers[2], typeof numbers[2]);
+console.log("numbers 배열 값 중 0번째 :", numbers[0], typeof numbers[0]);
+console.log("numbers 배열 값 중 1번째 :", numbers[1], typeof numbers[1]);
+console.log("numbers 배열 값 중 2번째 :", numbers[2], typeof numbers[2]);
 
 // 2) JS 객체
+
 // 값을 K:V (Map) 형식으로 여러개 저장하는 형태
 // -> { K:V, K:V, K:V ..} 하는 형태
 
@@ -187,7 +188,9 @@ console.log (user.id, user.pw, user.userName);
 // const 변수명 = function() {};
 //(변수명 == 함수명)
 
-const sumFn = function(a, b) {return a+b; }; //익명함수
+const sumFn = function(a, b) {
+    return a+b; 
+}; //익명함수
 
 
 /* function sumFn(a, b) {
