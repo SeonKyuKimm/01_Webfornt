@@ -13,6 +13,7 @@ const result = document.getElementById("calcResult");
 // 두 수를 더해서 화면에 출력하는 함수
 function plusFn() {
     // input요소.value : input 요소에 작성된 값 얻어오기
+    // 버튼이 5개니까 작성될 5개의 함수( plusFn()~nodFn()까지 각각 다 value값 작성해줘야함 )
     const value1 = number1.value;
     const value2 = number2.value;
 

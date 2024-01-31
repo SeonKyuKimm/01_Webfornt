@@ -20,7 +20,7 @@ number1 = 10;
 // 콘솔에 number1 값 출력하기
 console.log(number1);
 
-// 변수의 선언 + 대입
+// 변수의 선언 + 대입 =을  한 상태를 초기화라고 함 저 상태에서 number2 =30; 을 하면 재대입이라고 함 
 var number2 = 20;
 
 console.log(number2);
@@ -87,12 +87,14 @@ console.log("PI : ", PI);
 // : 모든 코드블록 내에서 선언된 변수는 코드블록 내에서만 유효하며, 코드 블록 외부에서는 참조할 수 없다.
 // 즉 코드 블록 내부에서 선언한 변수는 지역 변수이다.
 
-// 블록 레벨 ( let, const)
+// 블록 레벨 ( let, const 중괄호를 블록이라고 함)
 let foo = 123; // 전역 변수, (블록 외)
 
 {
     let foo = 456; //지역 변수
     let bar = 456; //지역 변수
+
+    //let bar = 456;을 부르고 싶으면 중괄호 내에서 함수 실행
 }
 
 console.log(foo); //123
@@ -111,6 +113,7 @@ console.log(test);
 
 console.log(test);
 
+// var는 함수 내부에서만 지역변수 취급이 되고, var는 전역변수다 무적권
 
 
 /* JS 자료형 확인하기 */

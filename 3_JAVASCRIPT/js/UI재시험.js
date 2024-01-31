@@ -14,9 +14,11 @@ const applyBtn = document.querySelector("#apply-btn");//적용버튼
         const fontSize = document.querySelector("#font-size");//글자크기
         const fontWeight = document.querySelector("[name='font-weight']:checked");// 글자굵기
 
+        
         const color = document.querySelector("#color");// 글자색
         const bgColor= document.querySelector("#bgColor");// 배경색
-        // radio버튼은 name으로 그룹화
+        // radio버튼은 name 속성으로 그룹화.
+        // :checked -> 그룹으로 묶인 radio input에 체크하는 방식
         const row = document.querySelector("[name='row']:checked");// 가로정렬
         const col = document.querySelector("[name='col']:checked");// 세로정렬
 

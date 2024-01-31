@@ -23,7 +23,7 @@ function check2() {
    const randomNumber = Math.floor(Math.random() * 101);
 
    if(randomNumber %2 == 1) { //홀수
-    alert (`${randomNumber} 는 홀수 입니다`);
+        alert (`${randomNumber} 는 홀수 입니다`);
     } 
     else {    //홀수가 아닌 경우 ==짝수
         alert (`${randomNumber} 는 짝수 입니다`);
@@ -59,7 +59,7 @@ function check3() {
 // 어린이 청소년 성인 구분하기.
 
 const inputAge = document.getElementById("inputAge");// input 자체 
-
+    // inline형식으로 기입된 함수 check3() 을 클릭하면 일어나는 일
 function check4() {
     //입력한 나이 값 얻어오기
      const age = Number(inputAge.value);
@@ -77,14 +77,18 @@ function check4() {
 
             //중첩 if문
             if(age <0 || age > 150) { // 0~150 사이가 아닌 경우
+                //age의 값이  0 보다 작"거나" age의 값이 150보다 크 면
                 alert ("잘못 입력하셨습니다.");
 
+                //그렇지 않고
             } else if(age >=0 && age <= 13) { // 어린이
+                //age에 입력된 값이 0보다 크거나 같고, 13보다 작거나 같으면( 0을 포함한 13'이하'의 수라면)
                 alert("어린이");
 
             } else if (age <=19) { // 청소년
+                //age에 입력된 값이 (앞선 else if문의 값을 지나왔기때문에) 19보다만 작거나 19이면
                 alert("청소년");
-           
+                // 마찬가지로 입력한 값이 앞선 else if의 조건값을 true로 충족하지 못했으니 그 나머지 값은,
             } else { // 성인
                 alert("성인");
             }

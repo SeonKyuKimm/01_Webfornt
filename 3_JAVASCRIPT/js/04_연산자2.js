@@ -57,10 +57,11 @@ function checkFn3() {
     result3.innerText = `${v1}은/는 ${v2}의 배수 : ${v1 % v2 == 0}`;
 }
 
-
+////////////////////////////////////////////////////////
 // 입력된 값 만큼 누적 / 차감
+//현재값(span)안의 0의 값을 변경해야해서 let count4 = 0;
 
-let count4 = 0;
+let count4 = 0; // 전역변수로 설정해둬서 { 스코프 } 안에서도 활용 가능
 
 const input4 = document.getElementById("input4");
 
@@ -72,7 +73,7 @@ function minus4() {
     const value = Number(input4.value);
     //count4 = count4 - value;
 
-    count4 -= value;
+    count4 -= value; //count4 = count4 - value;
 
     result4.innerText = count4;
 }
@@ -87,7 +88,10 @@ function plus4() {
     result4.innerText = count4;
 }
 
+////////////////////////////////////////////////////////
+
 // 논리 연산자 확인하기
+  
 
 function checkFn5() {
     //AND (&&)
@@ -116,7 +120,7 @@ function checkFn5() {
     const bool6 = false ;
     console.log( !(bool6 != true) );
 }
-
+////////////////////////////////////////////////////////////////
 
 const inputId = document.getElementById("inputId");
 const inputPw = document.getElementById("inputPw");
