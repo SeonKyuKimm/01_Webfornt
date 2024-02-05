@@ -2,7 +2,7 @@
 
 function test() {
 
-    const password = prompt("비밀번호를 입력하세요")
+    const password = prompt("비밀번호를 입력하세요");
     // prompt : 확인 취소를 가지고 있는 경고창
 
     // 확인버튼 -> 입력한 문자열
@@ -22,7 +22,7 @@ function test() {
     
 }
 
-// ******************************
+// ***************************************************************
 
 const output = document.getElementById("output"); //잔액출력 span
 const amount = document.getElementById("amount"); //금액작성 input
